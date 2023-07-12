@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BoxApp from "../box/Box";
+import { BoxApp } from "../box/BoxApp";
 
 const MainContent = (props) => {
   let headerName = "Test";
@@ -30,7 +30,7 @@ const MainContent = (props) => {
       <br />
       <br />
       <hr />
-      <Box />
+      <BoxApp />
     </div>
   );
 };
