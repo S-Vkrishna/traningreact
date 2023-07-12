@@ -5,8 +5,8 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.userData = {
-      name: "Veerendra Kumar",
-      age: "29",
+      name: "Vamsi Krishna Sanagapalli",
+      age: "30",
     };
 
     this.handleClick = this.handleClick.bind(this);
