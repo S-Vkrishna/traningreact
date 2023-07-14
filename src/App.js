@@ -3,6 +3,7 @@ import Footer from "./components/footer/Footer";
 import MainContent from "./components/main-content/MainContent";
 import "./App.css";
 import { useState } from "react";
+import BoxApp from "./components/box/Box";
 
 const App = () => {
   const brandName = "Logo";
@@ -16,6 +17,7 @@ const App = () => {
     <div className="App">
       <Header brandName={brandName} getUserData={getUserData} />
       <MainContent userData={userData} />
+      <BoxApp />
       <Footer brandName={brandName} />
     </div>
   );

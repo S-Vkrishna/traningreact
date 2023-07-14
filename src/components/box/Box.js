@@ -1,11 +1,15 @@
 import React from "react";
-import Box from "@mui/material/Box";
+import { Box } from "@mui/material";
 
 const BoxApp = () => {
-  return (
-    <div>
-      <Box>Greetings from vamsi krishna</Box>
-    </div>
-  );
+  <div
+    style={{
+      marginLeft: "40%",
+      marginTop: "60px",
+      width: "30%",
+    }}
+  ></div>;
+  return <Box> greating form vamsi krishna </Box>;
 };
+
 export default BoxApp;
