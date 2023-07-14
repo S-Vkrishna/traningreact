@@ -11,7 +11,7 @@ const MainContent = (props) => {
   };
 
   return (
-    <div>
+    <div className="main-content">
       <div style={{ color: "red", padding: "10px", marginLeft: "30px" }}>
         <h2 id="demo">
           This is {titleName} {headerName} is coming from the user{" "}
@@ -25,10 +25,8 @@ const MainContent = (props) => {
         section used for context
       </p>
       <button onClick={handleClick}>Change Name</button>
-      {/* <button onclick="handleClick()">Change Name</button> */}
       <br />
       <br />
-      <hr />
     </div>
   );
 };
