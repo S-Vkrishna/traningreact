@@ -1,35 +1,30 @@
-import { useState, useEffect } from "react";
+import React from 'react'
 
-const Signup = (props) => {
-  const [buttonLabel, setButtonLabel] = useState("Signup");
+export const Signup = () => {
+  return (
+    <div>
+      <label className="firstName" for="firstName">First Name </label>
+                  <input className="form__input" type="text" id="firstName" placeholder="First Name"/>
+              
+            
+                  <label className="lastName"for="lastName">Last Name </label>
+                  <input  type="text" name="" id="lastName"  className="form__input"placeholder="LastName"/>
+            
+                  <label className="email" for="email">Email </label>
+                  <input  type="email" id="email" className="form__input" placeholder="Email"/>
+           
+            
+                  <label className="password" for="password">Password </label>
+                  <input className="form__input" type="password"  id="password" placeholder="Password"/>
+            
+             
+                  <label className="confirmPassword" for="confirmPassword">Confirm Password </label>
+      <input className="form__input" type="password" id="confirmPassword" placeholder="Confirm Password" />
+      
+          
+      
+              <button type="submit" class="btn">Register</button>
+    </div>
 
-  useEffect(() => {
-    setButtonLabel("Signup ");
-    console.log("From mount: Signup");
-
-    return function () {
-      console.log("Un mount: Signup");
-    };
-  }, []);
-
-  useEffect(() => {
-    console.log("From update: Signup");
-
-    return () => {
-      console.log("Cleanup: Signup");
-    };
-  }, [buttonLabel]);
-
-  const getButtonLabel = () => {
-    console.log("From screen paint: singup");
-    return buttonLabel;
-  };
-
-  return <button onClick={props.handleClick}>{getButtonLabel()}</button>;
-};
-
-export default Signup;
-
-// mounting, updation, unmount
-
-// jsx, state, props, life cycle methods, conditional rendering
+  )
+}
